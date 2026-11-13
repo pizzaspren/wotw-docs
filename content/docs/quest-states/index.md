@@ -321,6 +321,49 @@ Return the artifact to Tokk.
 
 ## A Diamond in the Rough
 
+- Vanilla name: `questUberStateGroup.desertCogQuest`
+- Identifier: `14019|61011`
+
+### Steps {#a-diamond-in-the-rough-steps}
+
+#### `🠖 1` {#a-diamond-in-the-rough-step-1}
+
+##### Prerequisites
+
+- Talk to Tokk next to the Windswept Wastes central teleporter
+
+#### `🠖 4` {#a-diamond-in-the-rough-step-4}
+
+##### Alias
+
+`Wastes.RoughDiamond.GemCollected`
+
+##### Quest Objective
+
+Explore the Windswept Wastes near the shovel.
+
+##### Prerequisites
+
+- Obtain the Eerie Gem: `Wastes.RoughDiamond.Gem` / `questUberStateGroup.mineGemItemCollected`
+
+##### Notes
+
+The quest is progressed to this step when you load the shovel scene with the Eerie Gem collected. Burrowing into the sand is only necessary if you don't have the gem.
+
+#### `🠖 5` {#a-diamond-in-the-rough-step-5}
+
+##### Alias
+
+`Glades.RoughDiamond.Completed`
+
+##### Quest Objective
+
+Take the eerie gem to a specialist.
+
+##### Prerequisites
+
+- Previous step: `Wastes.RoughDiamond.GemCollected` / `questUberStateGroup.desertCogQuest == 4`
+
 ## Hand To Hand
 
 ## Rebuilding the Glades
