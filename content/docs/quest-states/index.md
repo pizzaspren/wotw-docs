@@ -259,6 +259,56 @@ Find the Heart of the Forest
 
 ## Into the Burrows
 
+- Vanilla name: `npcsStateGroup.inkwaterWellQuest`
+- Identifier: `48248|18458`
+
+### Steps {#into-the-burrows-steps}
+
+#### `🠖 1` {#into-the-burrows-step-1}
+
+##### Prerequisites
+
+- Talk to Tokk next to the bell puzzle above Burrows
+
+#### `🠖 2` {#into-the-burrows-step-2}
+
+##### Quest Objective
+
+Find the artifact in the Midnight Burrows.
+
+##### Prerequisites
+
+- Bell puzzle solved: `Marsh.Bells.BurrowsOpen` / `howlsOriginGroup.bellPuzzleSolved`
+
+#### `🠖 3` {#into-the-burrows-step-3}
+
+##### Alias
+
+`Burrows.IntoBurrows.TabletCollected`
+
+##### Quest Objective
+
+Find the artifact in the Midnight Burrows.
+
+##### Prerequisites
+
+- Mysterious tablet pickup: `Burrows.IntoBurrows.Tablet` / `questUberstateGroup.howlsOriginTreasureCollected`
+
+#### `🠖 4` {#into-the-burrows-step-4}
+
+##### Alias
+
+`Marsh.IntoBurrows.Completed`
+
+##### Quest Objective
+
+Return the artifact to Tokk.
+
+##### Prerequisites
+
+- Previous step: `Burrows.IntoBurrows.TabletCollected` / `npcsStateGroup.inkwaterWellQuest == 3`
+- Talk to Tokk next to the bell puzzle above Burrows
+
 ## The Lost Compass
 
 ## Into the Darkness
