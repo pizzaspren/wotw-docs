@@ -257,6 +257,56 @@ Find the Heart of the Forest
 
 ## A Little Braver
 
+- Vanilla name: `questUberStateGroup.braveMokiQuest`
+- Identifier: `14019|15983`
+
+### Steps {#a-little-braver-steps}
+
+#### `🠖 1` {#a-little-braver-step-1}
+
+##### Alias
+
+`Marsh.LittleBraver.Started`
+
+##### Prerequisites
+
+- Talk to Mokk the Brave in Howl's Den. Mokk only spawns after defeating Howl: `Marsh.HowlDefeated` / `swampStateGroup.nightCrawlerDefeated`
+
+#### `🠖 2` {#a-little-braver-step-2}
+
+##### Alias
+
+`Marsh.LittleBraver.FangCollected`
+
+##### Quest Objective
+
+Find a Howl fang near where you fought Howl.
+
+##### Prerequisites
+
+- Previous step: `Marsh.LittleBraver.Started` / `questUberStateGroup.braveMokiQuest == 1`
+- Pick up Howl's Fang: `Marsh.LittleBraver.Fang` / `questUberStateGroup.braveMokiItemCollected`
+
+#### `🠖 3` {#a-little-braver-step-3}
+
+##### Alias
+
+`Marsh.LittleBraver.Completed`
+
+##### Quest Objective
+
+Give the Howl fang to Mokk the Brave.
+
+##### Prerequisites
+
+Either of:
+- Previous step: `Marsh.LittleBraver.FangCollected` / `questUberStateGroup.braveMokiQuest == 2`
+- Pick up Howl's Fang: `Marsh.LittleBraver.Fang` / `questUberStateGroup.braveMokiItemCollected`
+
+##### Notes
+
+The intended way to complete this quest is by following the steps in order. Initially, picking up `Marsh.LittleBraver.Fang` before talking to Mokk probably resulted in a softlock, so Moon introduced a check to allow completing the quest with the Fang alone.
+
 ## Into the Burrows
 
 - Vanilla name: `npcsStateGroup.inkwaterWellQuest`
