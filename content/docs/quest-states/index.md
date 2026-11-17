@@ -363,6 +363,49 @@ Return the artifact to Tokk.
 
 ## Into the Darkness
 
+- Vanilla name: `questUberStateGroup.darkCaveQuest`
+- Identifier: `14019|33776`
+
+### Steps {#into-the-darkness-steps}
+
+#### `🠖 1` {#into-the-darkness-step-1}
+
+##### Alias
+
+`Glades.IntoDarkness.Started`
+
+##### Prerequisites
+
+- Talk to the moki next to the collapsed cave in Glades
+
+#### `🠖 2` {#into-the-darkness-step-2}
+
+##### Alias
+
+`Glades.IntoDarkness.AcornCollected`
+
+##### Quest Objective
+
+Find a way into the cave to retrieve the Moki's keepsake.
+
+##### Prerequisites
+
+- Obtain the Acorn: `Glades.IntoDarkness.Acorn` / `questUberStateGroup.darkCaveQuestItemCollected`
+
+#### `🠖 3` {#into-the-darkness-step-3}
+
+##### Alias
+
+`Glades.IntoDarkness.Completed`
+
+##### Quest Objective
+
+Return the acorn to the Moki.
+
+##### Prerequisites
+
+- Previous step: `Glades.IntoDarkness.AcornCollected` / `questUberStateGroup.darkCaveQuest == 2`
+
 ## Family Reunion
 
 ## The Tree Keeper
